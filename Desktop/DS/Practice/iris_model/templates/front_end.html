@@ -2,15 +2,17 @@
     <title> IRIS </title>
 </head>
 <body bgcolor="blue">
-<h2>IRIS</h2>
+    <h2>IRIS</h2>
 
-<form action="" method="post">
-    SepalLengthCm<input type= 'text' name="username" ><br><br>
-    SepalWidthCm<input type= 'text' name="username" ><br><br>
-    PetalLengthCm<input type= 'text' name="username" ><br><br>
-    PetalWidthCm<input type= 'text' name="username" ><br><br>
-    <input type= 'submit'
+    <form action="/get_data" method="post">
+        Sepal Length Cm<input type= 'number' step="any" name="sepal_length" ><br><br>
+        Sepal Width Cm<input type= 'number' step="any" name="sepal_width" ><br><br>
+        Petal Length Cm<input type= 'number' step="any" name="petal_length" ><br><br>
+        Petal Width Cm<input type= 'number' step="any" name="petal_width" ><br><br>
+        <input type= 'submit'
 
-</form>
+        <h3> {{PREDICT_VALUE}} </h3>
+
+    </form>
 
 </body>
